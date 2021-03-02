@@ -7,25 +7,33 @@ var ul = document.getElementById("risultato");
 for (var i = 1; i <= 100; i++) {
 
   if (i % 3 == 0 && i % 5 == 0) {
+
     console.log("FizzBuzz");
     var li = document.createElement("li");
     li.appendChild(document.createTextNode("FizzBuzz"));
     ul.appendChild(li);
+
   } else if (i % 3 == 0) {
+
     console.log("Fizz");
     var li = document.createElement("li");
     li.appendChild(document.createTextNode("Fizz"));
     ul.appendChild(li);
+
   } else if (i % 5 == 0) {
+
     console.log("Buzz");
     var li = document.createElement("li");
     li.appendChild(document.createTextNode("Buzz"));
     ul.appendChild(li);
+
   } else {
+
     console.log(i);
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(i));
     ul.appendChild(li);
+    
   }
 
 }
